@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP</title>
+    <link rel="stylesheet" href="css/Style.css">
+
+</head>
+
+<body>
+
+    <h2 id="Title">EQUIPOS DE RED</h2>
+    <form action="" class="validation" id="validation">
+        <!--group Brand-->
+        
+        <div class="validation__marca" id="Status__marca">
+            <input type="text" class="validation__input" placeholder="Ingresar marca" name="marca" id="marca">
+            <p class="validation__error">Ingrese hasta 20 caracteres</p>
+        </div>
+        <!--group model-->
+        <div class="validation__model" id="Status__model">
+            <input type="text" class="validation__input" placeholder="Ingresar modelo" name="model" id="model">
+            <p class="validation__error">Ingrese hasta 15 caracteres</p>
+        </div>
+        <!--group ip-->
+        <div class="validation__ip" id="Status__ip">
+            <input type="text" class="validation__input" placeholder="XXXX.XXXX.XXXX.XXXX" name="ip" id="ip">
+            <p class="validation__error">Debe generarse de la siguiente forma XXX.XXX.XXX.XXX 😵</p>
+        </div>
+        <!--group subnet-->
+        <div class="validation__subnet" id="Status__subnet">
+            <input type="text" class="validation__input" placeholder="Ingresar Mascara de Subred" name="subnet" id="subnet">
+            <p class="validation__error">Debe generarse de la siguiente forma XXX.XXX.XXX.XXX 😵</p>
+        </div>
+        <!--group gateway-->
+        <div class="validation__gateway" id="Status__gateway">
+            <input type="text" class="validation__input" placeholder="Ingresar Gateway" name="gateway" id="gateway">
+            <p class="validation__error">Debe generarse de la siguiente forma XXX.XXX.XXX.XXX 😵</p>
+        </div>
+        <!--group imagen-->
+        <div class="validation__imagen" id="Status__imagen">
+            <input type="file" placeholder="Ingresar imagen" name="imagen" id="imagen">
+            <p class="validation__error">Debe generarse de la siguiente forma XXX.XXX.XXX.XXX 😵</p>
+        </div>
+        <div class="btn_send_form">
+            <button type="submit" class="btn-send">Enviar</button>
+        </div>
+    </form>
+</body>
+<script src="js/main.js"></script>
+
+</html>

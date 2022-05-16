@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(223, 223, 223);
+}
+
+#Title {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+.validation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 5%;
+    text-align: center;
+    color: black;
+    align-items: center;
+    font-weight: bold;
+}
+
+.validation__input {
+    position: relative;
+    width: 50%;
+    background: rgb(250, 249, 248);
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3 ease all;
+    text-align: center;
+
+}
+
+.validation__input:focus {
+    border: 3px solid rgb(99, 109, 248);
+    outline: none;
+}
+
+.validation__error {
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+.btn_send_form {
+    align-items: center;
+    grid-column: span 2;
+}
+
+.btn-send {
+    margin-top: 30px;
+    width: 20%;
+    outline: none;
+    background: green;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: .1 ease all;
+}
+
+button:hover {
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+.validation__correct .validation__input {
+    border: 3px solid green;
+}
+
+.validation__incorrect .validation__input {
+    border: 3px solid red;
+}
