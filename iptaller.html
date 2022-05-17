@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
     <title>IP</title>
     <link rel="stylesheet" href="css/Style.css">
 
@@ -13,22 +16,26 @@
 <body>
 
     <h2 id="Title">EQUIPOS DE RED</h2>
-    <form action="" class="validation" id="validation">
+    <form action="javascript:void(0);" class="validation" id="validation">
         <!--group Brand-->
         
         <div class="validation__marca" id="Status__marca">
-            <input type="text" class="validation__input" placeholder="Ingresar marca" name="marca" id="marca">
+            <select type="text" class="validation__input" placeholder="Ingresar marca" name="marca" id="marca" required>
+                <option value="">Seleccione una marca *</option>
+            </select>
             <p class="validation__error">Ingrese hasta 20 caracteres</p>
         </div>
         <!--group model-->
         <div class="validation__model" id="Status__model">
-            <input type="text" class="validation__input" placeholder="Ingresar modelo" name="model" id="model">
+            <select type="text" class="validation__input" placeholder="Ingresar modelo" name="model" id="model">
+                <option value="">Seleccione un modelo *</option>
+            </select>
             <p class="validation__error">Ingrese hasta 15 caracteres</p>
         </div>
         <!--group ip-->
         <div class="validation__ip" id="Status__ip">
             <input type="text" class="validation__input" placeholder="XXXX.XXXX.XXXX.XXXX" name="ip" id="ip">
-            <p class="validation__error">Debe generarse de la siguiente forma XXX.XXX.XXX.XXX 😵</p>
+            <p class="validation__error">La ip debe generarse de la siguiente forma XXX.XXX.XXX.XXX 😵</p>
         </div>
         <!--group subnet-->
         <div class="validation__subnet" id="Status__subnet">
@@ -46,10 +53,8 @@
             <p class="validation__error">Debe generarse de la siguiente forma XXX.XXX.XXX.XXX 😵</p>
         </div>
         <div class="btn_send_form">
-            <button type="submit" class="btn-send">Enviar</button>
+            <button type="submit" onclick="validate()" class="btn-send">Enviar</button>
         </div>
     </form>
 </body>
-<script src="js/main.js"></script>
-
 </html>
