@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(223, 223, 223);
+    background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
 }
 
 #Title {
@@ -62,6 +62,9 @@ body {
     transition: .1 ease all;
 }
 
+.error{
+    color: rgb(223, 5, 5);
+}
 button:hover {
     box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
 }

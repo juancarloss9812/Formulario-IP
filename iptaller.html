@@ -10,7 +10,8 @@
     <script src="js/main.js"></script>
     <title>IP</title>
     <link rel="stylesheet" href="css/Style.css">
-
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
@@ -20,39 +21,33 @@
         <!--group Brand-->
         
         <div class="validation__marca" id="Status__marca">
-            <select type="text" class="validation__input" placeholder="Ingresar marca" name="marca" id="marca" required>
+            <select type="text" class="validation__input form-select" placeholder="Ingresar marca" name="marca" id="marca" required>
                 <option value="">Seleccione una marca *</option>
             </select>
-            <p class="validation__error">Ingrese hasta 20 caracteres</p>
         </div>
         <!--group model-->
         <div class="validation__model" id="Status__model">
-            <select type="text" class="validation__input" placeholder="Ingresar modelo" name="model" id="model">
+            <select type="text" class="validation__input form-select" placeholder="Ingresar modelo" name="model" id="model">
                 <option value="">Seleccione un modelo *</option>
             </select>
-            <p class="validation__error">Ingrese hasta 15 caracteres</p>
         </div>
         <!--group ip-->
         <div class="validation__ip" id="Status__ip">
-            <input type="text" class="validation__input" placeholder="XXXX.XXXX.XXXX.XXXX" name="ip" id="ip">
-            <p class="validation__error">La ip debe generarse de la siguiente forma XXX.XXX.XXX.XXX 😵</p>
+            <input type="text" class="validation__input form-control" placeholder="XXXX.XXXX.XXXX.XXXX" name="ip" id="ip">
         </div>
         <!--group subnet-->
         <div class="validation__subnet" id="Status__subnet">
-            <input type="text" class="validation__input" placeholder="Ingresar Mascara de Subred" name="subnet" id="subnet">
-            <p class="validation__error">Debe generarse de la siguiente forma XXX.XXX.XXX.XXX 😵</p>
+            <input type="text" class="validation__input form-control" placeholder="Ingresar Mascara de Subred" name="subnet" id="subnet">
         </div>
         <!--group gateway-->
         <div class="validation__gateway" id="Status__gateway">
-            <input type="text" class="validation__input" placeholder="Ingresar Gateway" name="gateway" id="gateway">
-            <p class="validation__error">Debe generarse de la siguiente forma XXX.XXX.XXX.XXX 😵</p>
+            <input type="text" class="validation__input form-control" placeholder="Ingresar Gateway" name="gateway" id="gateway">
         </div>
         <!--group imagen-->
         <div class="validation__imagen" id="Status__imagen">
-            <input type="file" placeholder="Ingresar imagen" name="imagen" id="imagen">
-            <p class="validation__error">Debe generarse de la siguiente forma XXX.XXX.XXX.XXX 😵</p>
+            <input class="form-control" type="file" placeholder="Ingresar imagen" name="imagen" id="imagen">
         </div>
-        <div class="btn_send_form">
+        <div class="btn_send_form btn-success">
             <button type="submit" onclick="validate()" class="btn-send">Enviar</button>
         </div>
     </form>
